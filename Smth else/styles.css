@@ -1,0 +1,546 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+.slide {
+  width: 60%;
+  height: 100vh;
+  border-radius: 20px;
+  margin: 10px;
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+
+.slide:nth-child(1) {
+  animation: appearDown 2.5s linear forwards;
+}
+
+.slide:nth-child(2) {
+  animation: appearUp 2.5s linear backwards;
+}
+
+.slide:nth-child(3) {
+  animation: appearDown 2.5s linear forwards;
+}
+
+.slide:nth-child(4) {
+  animation: appearUp 2.5s linear backwards;
+}
+
+.slide:nth-child(5) {
+  animation: appearDown 2.5s linear forwards;
+}
+
+.slide h3 {
+  position: absolute;
+  background-color: gray;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Conv_dodger2";
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  padding: 0 7px;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  font-family: "Conv_dodger2";
+  transition: opacity 0.3s ease-in 0.5s;
+}
+
+.startScreen {
+  width: 100%;
+  min-height: 700px;
+  background-color: black;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: 100%;
+  min-height: 100%;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 80px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.versusBoard {
+  position: absolute;
+  height: 550px;
+  bottom: 30px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  box-shadow: 0 0 30px lightgrey;
+  border-radius: 20px;
+  margin: 0px 20px;
+  opacity: 0.8;
+  transition: 2s;
+  animation: appear 2s linear forwards;
+}
+
+.upbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  width: 90%;
+  font-family: "Conv_dodger2";
+  text-shadow: 0 0 40px white;
+  text-decoration: underline;
+  animation: appear 1.5s linear forwards;
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 475px;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0 0 0;
+}
+
+
+.timeBar {
+  display: flex;
+  width: 30%;
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  width: 100%;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.livesBar {
+  display: flex;
+  width: 30%;
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lives {
+  width: 100%;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.scoreBar {
+  display: flex;
+  width: 30%;
+  min-height: 50px;
+  font-size: 16px;
+}
+
+.score {
+  width: 100%;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.review-card {
+  background-color: transparent;
+  width: 120px;
+  height: 200px;
+  perspective: 1000px;
+  border-radius: 20px;
+  margin: 0px 8px;
+  transition: 1s;
+}
+
+.review-card:nth-child(1){
+  animation: appearLeft 2s linear forwards;
+}
+
+.review-card:nth-child(2){
+  animation: appearLeft 2s linear forwards;
+}
+
+.review-card:nth-child(3){
+  animation: appearLeft 2s linear forwards;
+}
+
+.review-card:nth-child(4){
+  animation: appearUp 2s linear forwards;
+}
+
+.review-card:nth-child(5){
+  animation: appearUp 2s linear forwards;
+}
+
+.review-card:nth-child(6){
+  animation: appearUp 2s linear forwards;
+}
+
+.review-card:nth-child(7){
+  animation: appearRight 2s linear forwards;
+}
+
+.review-card:nth-child(8){
+  animation: appearRight 2s linear forwards;
+}
+
+.review-card:nth-child(9){
+  animation: appearRight 2s linear forwards;
+}
+
+.review-card:nth-child(10){
+  animation: appearLeft 2s linear forwards;
+}
+
+.review-card:nth-child(11){
+  animation: appearLeft 2s linear forwards;
+}
+
+.review-card:nth-child(12){
+  animation: appearLeft 2s linear forwards;
+}
+
+.review-card:nth-child(13){
+  animation: appearDown 2s linear forwards;
+}
+
+.review-card:nth-child(14){
+  animation: appearDown 2s linear forwards;
+}
+
+.review-card:nth-child(15){
+  animation: appearDown 2s linear forwards;
+}
+
+.review-card:nth-child(16){
+  animation: appearRight 2s linear forwards;
+}
+
+.review-card:nth-child(17){
+  animation: appearRight 2s linear forwards;
+}
+
+.review-card:nth-child(18){
+  animation: appearRight 2s linear forwards;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+}
+
+.review-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px lightgrey;
+  border: 2px outset white;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.review-card-front, .review-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+
+.review-card-front {
+  background-image: url(/img/рубашка.jpg);
+  background-size: cover;
+}
+
+.review-card-back {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+}
+
+.back {
+  bottom: 0%;
+  right: 0%;
+  transition: 1.5s;
+  animation: appear 2s linear forwards;
+  text-shadow: 0 0 40px white;
+  padding: 0px 5px;
+  margin: 0px;
+}
+
+
+.rules {
+  bottom: 35%;
+  transition: 1.5s;
+  animation: appear 2s linear forwards;
+  text-shadow: 0 0 40px white;
+}
+
+.rulesBoard {
+  position: absolute;
+  height: 400px;
+  width: 60%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  box-shadow: 0 0 30px lightgrey;
+  color: white;
+  border-radius: 20px;
+  margin: 0px 20px;
+  padding: 25px;
+  opacity: 0.8;
+  transition: all 700ms ease-in-out;
+  animation: appear 2s linear forwards;
+  font-family: "Conv_dodger2";
+  text-shadow: 0 0 40px white;
+  overflow: auto;
+  font-size: 20px;
+}
+
+.rulesBoard p {
+  font-family: "Conv_dodger2";
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #000000;
+  border-radius: 20%;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 40px darkgray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253861;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background: black;
+  background-color: black;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background:black;
+  background-color: black;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  background:black;
+  background-color: black;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+  background:black;
+  background-color: black;
+}
+
+a {
+  position: absolute;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fdfbfd;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-family: "Conv_dodger2";
+  text-shadow: 0 0 40px white;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 1.5s;
+  cursor: pointer;
+  animation: appear 1.3s linear forwards;
+}
+
+a:hover {
+  color: #255784;
+  background: #ffffff;
+  box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+  transition-delay: 1s;
+}
+
+a span {
+  position: absolute;
+  display: block;
+}
+
+span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#ffffff);
+}
+
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 30px lightgrey;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Conv_dodger2";
+  text-shadow: 0 0 40px white;
+  padding: 20px;
+  animation: appear 1.3s linear forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearDown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes appearUp {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appearRight {
+  0% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes pulsate {
+  50% { color: rgb(255, 0, 0); text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+ }
+
